@@ -27,13 +27,13 @@ You can add your own dataset but have to follow these steps:
 
 ```bash
 mkdir -p datasets
-ln -s <full-path-to-your-dataset-folder> datasets/<your-dataset-name>
+ln -s "<full-path-to-your-dataset-folder>" "datasets/<your-dataset-name>"
 ```
 
 - Run the script generating low-resolution (LR, 128x128) images and high-resolution (HR, 512x512) images
 
 ```bash
-uv run scripts/generate_low_high_res_images.py "datasets/<your-dataset-folder>"
+uv run scripts/generate_low_high_res_images.py "datasets/<your-dataset-name>"
 ```
 
 In my case it is
