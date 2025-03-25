@@ -1,0 +1,29 @@
+[project]
+name = "swin-unet-sr"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "click>=8.1.8",
+    "dacite>=1.9.2",
+    "datasets>=3.3.2",
+    "einops>=0.8.1",
+    "matplotlib>=3.10.1",
+    "opencv-python-headless>=4.11.0.86",
+    "pyqt5==5.15.10",
+    "rich>=13.9.4",
+    "tensorboard>=2.19.0",
+    "timm>=1.0.15",
+    "torch>=2.6.0",
+    "torchvision>=0.21.0",
+    "tqdm>=4.67.1",
+    "transformers>=4.49.0",
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project.scripts]
+swin-unet-sr = "swin_unet_sr.cli:cli"

@@ -1,0 +1,8 @@
+name = "swin_unet_sr_x4_v1"
+batch_size = 16
+
+[data]
+low_res_dir = "datasets/ffhq_lr_128"
+high_res_dir = "datasets/ffhq_hr_512"
+start_pos = 30001
+

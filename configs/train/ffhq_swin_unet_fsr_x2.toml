@@ -1,0 +1,31 @@
+name = "swin_unet_sr_x2_v1"
+seed = 42
+epochs = 20
+
+[hyper]
+batch_size = 16
+lr = 2e-4
+train_val_test_split = [0.8, 0.1, 0.1]
+
+[scheduler]
+factor = 0.5
+patience = 2
+
+[data]
+low_res_dir = "datasets/ffhq_lr_256"
+high_res_dir = "datasets/ffhq_hr_512"
+end_pos = 500  # comment this line to load full data
+
+[model]
+swin_checkpoint = "microsoft/swinv2-base-patch4-window8-256"
+img_mean = [0.485, 0.456, 0.406]
+img_std = [0.229, 0.224, 0.225]
+patch_size = 4
+in_channels = 3
+embed_dim = 60
+skip_channels = [512, 256, 128]
+decoder_channels = [1024, 512, 256, 128]
+upscale = 2  # x2
+
+[model.upsampler]
+name = "LightweightUpsampler"
