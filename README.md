@@ -17,7 +17,11 @@ This project uses **SwinUnetSR** as the model, which combines [Swin Transformer 
 
 
 ## Dataset
-I choose Flickr-Faces HQ ([FFHQ](https://www.kaggle.com/datasets/arnaud58/flickrfaceshq-dataset-ffhq)) dataset as a start. You can add more dataset but have to follow these steps:
+I choose Flickr-Faces HQ ([FFHQ](https://www.kaggle.com/datasets/arnaud58/flickrfaceshq-dataset-ffhq)) dataset as a start. 
+
+![FFHQ](./pics/high_res_faces.png)
+
+You can add your own dataset but have to follow these steps:
 
 - Download the **HR image** dataset you want and symlink it to `datasets/<your-hr-dataset-name>`
 
@@ -26,7 +30,7 @@ mkdir -p datasets
 ln -s <full-path-to-your-dataset-folder> datasets/
 ```
 
-- Run the script generating low-resolution (LR) images and high-resolution (HR) images
+- Run the script generating low-resolution (LR, 128x128) images and high-resolution (HR, 512x512) images
 
 ```bash
 uv run scripts/generate_low_high_res_images.py "datasets/<your-dataset-folder>"
