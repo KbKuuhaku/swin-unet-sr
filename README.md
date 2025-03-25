@@ -27,7 +27,7 @@ You can add your own dataset but have to follow these steps:
 
 ```bash
 mkdir -p datasets
-ln -s <full-path-to-your-dataset-folder> datasets/
+ln -s <full-path-to-your-dataset-folder> datasets/<your-dataset-name>
 ```
 
 - Run the script generating low-resolution (LR, 128x128) images and high-resolution (HR, 512x512) images
