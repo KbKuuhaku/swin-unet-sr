@@ -45,8 +45,8 @@ uv run scripts/generate_low_high_res_images.py "datasets/ffhq"
 This will generate LR and HR images separately in `datasets/<your-dataset-name>_lr_<lr_resolution>`
 and `datasets/<your-dataset-name>_hr_<hr_resolution>`
 
-- Change the dataset path in `./configs/train/<your-config-name>.toml`, `start_pos` and `end_pos` controls
-the start and end point of images your wanna load
+- Change the dataset path in `./configs/train/<your-config-name>.toml`. `start_pos` and `end_pos` controls
+the start and end point of images you wanna load
 
 ```bash
 # ./configs/train/ffhq_swin_unet_fsr_x4.toml
