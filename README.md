@@ -21,7 +21,7 @@ FYI, **My spec** is:
 
 - NVIDIA GeForce RTX 4070 Ti (12GB)
 
-- USCORSAIR VENGEANCE 64G (16GBx4)
+- USCORSAIR VENGEANCE 64GB (16GBx4)
 
 And some basic training info:
 
