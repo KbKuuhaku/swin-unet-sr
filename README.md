@@ -15,6 +15,24 @@ This project uses **SwinUnetSR** as the model, which combines [Swin Transformer 
 
 - The pipeline was only tested on Ubuntu 22.04. Should work on any Linux system, Windows (if you know how to make symlinks with Windows)
 
+FYI, **My spec** is:
+
+- Intel Core i7 13700KF
+
+- NVIDIA GeForce RTX 4070 Ti (12GB)
+
+- USCORSAIR VENGEANCE 64G (16GBx4)
+
+And some basic training info:
+
+|     **Scale Factor**    	|           **Batch Size**          	|                **LR**               	| **Epochs** 	| **Iterations/epoch** 	|
+|:-----------------------:	|:---------------------------------:	|:-----------------------------------:	|:----------:	|:--------------------:	|
+|            x4           	|                 16                	|                 2e-4                	|     20     	|         1500         	|
+
+| **Training time/epoch** 	| **Evaluation-Training set/epoch** 	| **Evaluation-Validation set/epoch** 	|
+|:-----------------------:	|:---------------------------------:	|:-----------------------------------:	|
+|       6 mins 17 s       	|            2 mins 21 s            	|                 17 s                	|
+
 
 ## Dataset
 I choose Flickr-Faces HQ ([FFHQ](https://www.kaggle.com/datasets/arnaud58/flickrfaceshq-dataset-ffhq)) dataset as a start. 
