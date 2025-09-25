@@ -111,12 +111,28 @@ This will run the test based on the config in `./configs/test/ffhq_swin_unet_fsr
 **NOTE**: During the training, metrics are recorded in TensorBoard. However, the plots downloaded from TensorBoard are all blurry, so I wrote a notebook converting CSV files of TensorBoard to seaborn plots. 
 The code is on [colab](https://colab.research.google.com/drive/1q45stMwWKOulCL_A8X9p3fo9slmhNGvK?usp=sharing) and you can reproduce the result following the instruction in the notebook.
 
-## Citing
+## Citing Swin Transformer V2
 ```
 @inproceedings{liu2021swinv2,
   title={Swin Transformer V2: Scaling Up Capacity and Resolution}, 
   author={Ze Liu and Han Hu and Yutong Lin and Zhuliang Yao and Zhenda Xie and Yixuan Wei and Jia Ning and Yue Cao and Zheng Zhang and Li Dong and Furu Wei and Baining Guo},
   booktitle={International Conference on Computer Vision and Pattern Recognition (CVPR)},
   year={2022}
+}
+```
+
+## Citing SwinUnetSR
+```
+@article{Song2025-hh,
+    title = "{SwinUnetSR}: A transformer-based encoder-decoder structure with a
+             lightweight upsampler for face Super resolution",
+    author = "Song, Jiahao",
+    journal = "Applied and Computational Engineering",
+    publisher = "EWA Publishing",
+    volume = 154,
+    number = 1,
+    pages = "112--120",
+    month = may,
+    year = 2025,
 }
 ```
